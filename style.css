@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+body {
+  position: relative;
+}
+
+#canvas {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.actions {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px;
+}
+
+.actions > .icon {
+  width: 1.5em;
+  height: 1.5em;
+  padding: 10px;
+}
+
+.actions > .icon:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.actions > .icon.active {
+  fill: red;
+  transform: scale(1.2);
+}
+
+#color-selector {
+  position: absolute;
+  top: 30px;
+  right: 10px;
+}
+
+#color-selector > li {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 1px rgba(0,0,0,.5);
+}
+
+#color-selector > li.active {
+  transform: scale(1.2);
+}
+
+#color-selector > li:hover {
+  transform: scale(1.2);
+}
+
+#black {
+  background: black;
+}
+#red {
+  background: red;
+}
+#yellow {
+  background: yellow;
+}
+#blue {
+  background: blue;
+}
+#green {
+  background: green;
+}

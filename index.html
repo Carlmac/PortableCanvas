@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style.css">
+  <title>Canvas</title>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <div class="actions">
+    <svg class="icon active" id="brush" aria-hidden="true">
+        <use xlink:href="#icon-brush"></use>
+    </svg>
+    <svg class="icon" id="eraser" aria-hidden="true">
+        <use xlink:href="#icon-eraser"></use>
+    </svg>
+    <svg class="icon" id="clear" aria-hidden="true">
+        <use xlink:href="#icon-clear"></use>
+    </svg>
+    <svg class="icon" id="save" aria-hidden="true">
+        <use xlink:href="#icon-save"></use>
+    </svg>
+  </div>
+  <ul id="color-selector">
+    <li id="black" class="active"></li>
+    <li id="red"></li>
+    <li id="yellow"></li>
+    <li id="blue"></li>
+    <li id="green"></li>
+  </ul>
+<script src="./main.js"></script>
+<script src="//at.alicdn.com/t/font_938437_weachu9i5r.js"></script>
+</body>
+</html>
